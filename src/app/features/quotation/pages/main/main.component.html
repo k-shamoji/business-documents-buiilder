@@ -1,0 +1,9 @@
+<div class="container">
+  <h2>title</h2>
+  <app-detail [details]="details" (delete)="removeRow($event)"></app-detail>
+  <button mat-flat-button color="primary" (click)="addRow()">明細行を追加</button>
+  <div class="footer">
+    <div>税抜 {{ total | number }} 円</div>
+    <div>税込 {{ totalWitTax | number }} 円</div>
+  </div>
+</div>
